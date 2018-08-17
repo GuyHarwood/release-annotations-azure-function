@@ -15,7 +15,7 @@ module.exports = function (context, req) {
 
   const body = {
     Id: buildId,
-    AnnotationName: buildId.toString(),
+    AnnotationName: `Release ${buildId}`,
     EventTime: (new Date()).toISOString(),
     Category: 'Deployment',
     // the Properties part contains a JSON object as a string
